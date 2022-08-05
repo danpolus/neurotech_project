@@ -1,0 +1,7 @@
+expname = 'cpu_channels'
+
+netdepth = 4
+netwidth = 256
+epochs = 50
+save_model_epoch = 25
+channels = [ 26, 108,  52,  68,  25,  30,  29, 112]

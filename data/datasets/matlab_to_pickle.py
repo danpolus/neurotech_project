@@ -8,9 +8,11 @@ import gc
 import time
 
 
-# data = mat73.loadmat('./results/results.mat', only_include=["Name"])
 s = time.time()
-data = pymatreader.read_mat('./results/results.mat')
+gc.disable()
+data = pymatreader.read_mat('./results/Results_20220730_1207.mat')
+# data = mat73.loadmat('./results/Results_20220730_1207.mat')
+gc.enable()
 e = time.time()
 print(e-s)
 
@@ -21,7 +23,7 @@ from tqdm import tqdm
 for i in tqdm(range(number_of_files), leave=True):
     name = data['Results']['Name'][i]
     new_data = data['Results']['FeaturesExperiment'][i]
-    path = os.path.join('results', 'dicts', name)
+    path = os.path.join('results', 'dicts_lz', name)
     f = open(path, 'wb')
     pickle.dump(new_data, f)
     f.close()

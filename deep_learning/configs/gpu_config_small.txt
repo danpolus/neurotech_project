@@ -1,0 +1,10 @@
+expname = 'google_gpu_small'
+log_dir = './gdrive/MyDrive/neurotech/logs'
+data_dir = './normalized_numpy'
+
+epochs = 200
+measure_accuracy_epoch = 5
+save_model_epoch = 300
+
+netdepth = 4
+netwidth = 192
