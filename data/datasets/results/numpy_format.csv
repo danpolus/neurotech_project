@@ -1,9 +1,0 @@
-output is
-num_chunks X num channels X num features
-
-where the features are:
-slope: single value 1
-band power: 5 values (alpha, ...)
-spectra: 157 values
-spectral entropy: single value
-
