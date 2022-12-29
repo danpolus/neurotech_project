@@ -1,0 +1,8 @@
+מבחינת איך להריץ: 
+בשביל רק לאמן את הרשת (הקובץ train.py)
+python train.py --config=../configs/cpu_config.txt 
+(The configs files are also commited)
+כל שאר הקבצים החשובים, הם בלי פרמטרים, למשל יש את הקטע של לנסות מלא channels
+python automate_train.py
+או הדבר שמחפש צאנלים טובים
+python gradcam_test.py
